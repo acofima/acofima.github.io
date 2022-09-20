@@ -1,0 +1,319 @@
+/*Reboot*/
+
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+ }
+ *,*::before,*::after{
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+ }
+ :focus,:active{outline: none;}
+ a:focus,a:active{outline: none;}
+ nav,footer,header,aside{display: block;}
+ html,body{
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    scroll-behavior: smooth;
+ }
+ .btn, button{
+    -webkit-appearance: none;
+    -moz-appearance:    none;
+    appearance:         none;
+ }
+ 
+ .btn:focus, button:focus{
+   outline: none;
+ } 
+ a[href^=tel]{
+    color: #000;
+ }
+ input,button,textarea{font-family: inherit;}
+ input::-ms-clear{display: none;}
+ button{cursor: pointer;}
+ button::-moz-focus-inner{padding: 0;border: 0;}
+ a,a:visited{text-decoration: none;}
+ a:hover{text-decoration: none;}
+ img{vertical-align: top;}
+ h1,h2,h3,h4,h5,h6{font-size: inherit;font-weight: inherit;}
+
+
+body {
+    max-width: 100%;
+    min-width: 320px;
+    font-weight: 400;
+    font-size: 1.1vw;
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+}
+.li {
+    list-style: none;
+}
+
+/*-----SCROLL ANIMATION------------------------------------------*/
+
+.scroll_animation{
+    opacity: 0;
+    transform: translateY(15%);
+}
+.scroll_animation.element-show {
+    opacity: 1;
+    transition: all 1s;
+    transform: translateY(0%);
+}
+
+.scroll_animation_right{
+    opacity: 0;
+    transform: translateX(30%);
+}
+.scroll_animation_right.element-show {
+    opacity: 1;
+    transition: all 1s;
+    transform: translateX(0%);
+}
+
+.scroll_animation_left{
+    opacity: 0;
+    transform: translateX(-30%);
+}
+.scroll_animation_left.element-show {
+    opacity: 1;
+    transition: all 1s;
+    transform: translateX(0%);
+}
+
+/*---------HEADER-----------------------------------------*/
+.main_header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding-top: 3.15em;
+    padding-bottom: 4.23em;
+}
+.logo {
+    width: 24.4%;
+    margin-left: 8.35%;
+}
+.menu{
+    width: 51%;
+}
+.main_header_list {
+    list-style: none;
+    display: flex;
+    margin-left: 5%;
+}
+.list_header_item {
+    margin-left: 5.5%;
+}
+.link_header {
+    color: #000;
+}
+.language_choise {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 1.1vw;
+    color: red;
+    margin-left: 4%;
+}
+
+/*---------MAIN-------------------------------------------*/
+.main_container {
+    width: 100%;
+    display: block;
+}
+.main_block_1 {
+    width: 100%;
+    display: flex;
+    margin-left: 10%;
+}
+.vert_text_img {
+    width: 3.335%;
+    height: 45.35em;
+}
+.huge_pic_img {
+    width: 76.3%;
+    margin-left: 2%;
+}
+/*-----------*/
+.main_block_2 {
+    width: 100%;
+    display: block;
+    padding-top: 7.6em;
+}
+.circletext {
+    position: absolute;
+    margin-left: 13%;
+    margin-top: -1.5em;
+}
+.text_block1_1 {
+    font-size: 3.33vw;
+    margin-left: 15.7%;
+    line-height: 150%;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+}
+.red_word {
+    font-weight: 700;
+    color: #AB1401;
+}
+.text_block1_2 {
+    width: 45.14%;
+    line-height: 150%;
+    font-size: 1.25vw;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    margin-left: 36.6%;
+    margin-top: 2em;
+}
+/*----------*/
+.main_block_3 {
+    display: flex;
+    width: 100%;
+    padding-top: 10.1em;
+}
+.block_3_text {
+    display: block;
+    width: 50%;
+}
+.text_block3_1 {
+    width: 75.6%;
+    line-height: 150%;
+    font-size: 1.67vw;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    color: #070056;
+    margin-left: 16.65%;
+    margin-top: 3em;
+}
+.text_block3_2 {
+    width: 67.8%;
+    line-height: 150%;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    margin-top: 2em;
+    margin-left: 30.85%;
+    padding-bottom: 1em;
+}
+.block_3_readmore {
+    color: #AB1401;
+    margin-left: 30.85%;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+}
+.block_3_img {
+    width: 35.3%;
+    margin-left: 7%;
+}
+/*----------*/
+.main_block_4 {
+    display: flex;
+    margin-top: 10.1em;
+}
+.text_block4_1 {
+    color: #070056;
+    font-size: 2.22vw;
+    margin-left: 15.4%;
+}
+.block_4_text {
+    display: block;
+    margin-left: 6%;
+}
+.text_block4_2 {
+    width: 75.6%;
+    line-height: 150%;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 1.39vw;
+}
+.text_block4_3 {
+    width: 75.6%;
+    line-height: 150%;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 1.39vw;
+    margin-top: 1em;
+    padding-bottom: 1em;
+}
+.block_4_link {
+    color: #AB1401;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+}
+
+/*---------FOOTER-----------------------------------------*/
+
+.main_footer {
+    display: flex;
+    background-color: #000;
+    margin-top: 10.1em;
+    width: 100%;
+    padding-bottom: 2.2em;
+}
+.left_foot_part {
+    display: block;
+    width: 40%;
+    margin-left: 7%;
+    margin-top: 2.2em;
+}
+.right_foot_part {
+    display: block;
+    width: 70%;
+    margin-top: 3em;
+}
+.left_foot_text1_1 {
+    color: white;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    line-height: 150%;
+    font-size: 2.22vw;
+}
+.left_foot_text1_2 {
+    color: white;
+    font-family: 'Lato', sans-serif;
+    font-weight: 200;
+    line-height: 150%;
+    font-size: 1.39vw;
+}
+.foot_list{
+    display: flex;
+    list-style: none;
+    width: 100%;
+}
+.list_foot_item {
+    display: inline;
+    margin-right: 9%;
+}
+.link_foot {
+    color: white;
+}
+.long{
+    width: 22%;
+}
+.long2{
+    width: 26%;
+}
+.info_foot {
+    display: flex;
+    margin-top: 5.5em;
+}
+.infotext1 {
+    color: white;
+    font-family: 'Lato', sans-serif;
+    font-weight: 100;
+    font-size: 1.39vw;
+}
+.infotext2 {
+    color: white;
+    margin-left: 57.6%;
+    font-family: 'Lato', sans-serif;
+    font-weight: 100;
+    font-size: 1.39vw;
+}
